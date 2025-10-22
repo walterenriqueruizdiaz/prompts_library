@@ -36,7 +36,6 @@ extensión-de-prompts/
 
 Cada prompt se guarda en el almacenamiento de Chrome (`chrome.storage.local` o `chrome.storage.sync`) con el siguiente formato:
 
-```json
 {
   "id": "001",
   "titulo": "Prompt para crear guion educativo",
@@ -44,6 +43,7 @@ Cada prompt se guarda en el almacenamiento de Chrome (`chrome.storage.local` o `
   "categoria": "Educación",
   "etiquetas": ["ChatGPT", "Guion", "Docentes"]
 }
+
 ⚙️ Permisos necesarios
 
 En el archivo manifest.json se deben incluir los siguientes permisos:
