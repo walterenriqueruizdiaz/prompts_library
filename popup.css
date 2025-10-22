@@ -1,0 +1,158 @@
+/* CONFIGURACIÓN GENERAL */
+body {
+  font-family: Arial, sans-serif;       /* Fuente limpia y legible */
+  background-color: #f8f9fa;           /* Fondo claro */
+  color: #333;                         /* Texto gris oscuro para buen contraste */
+  width: 320px;                        /* Ancho típico de popup */
+  padding: 10px;                       /* Espaciado interno */
+  margin: 0;                           /* Sin margen externo */
+  box-sizing: border-box;              /* Incluye el padding en el ancho total */
+}
+
+/* ENCABEZADO */
+header {
+  background-color: #0078d7;           /* Azul intenso (podés cambiarlo por tu color de marca) */
+  color: white;                        /* Texto blanco sobre fondo azul */
+  text-align: center;                  /* Centra el texto */
+  padding: 8px 0;                      /* Espaciado vertical */
+  border-radius: 8px;                  /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave debajo del header */
+}
+
+/* FORMULARIO PARA AGREGAR PROMPTS */
+#add-prompt {
+  display: flex;
+  flex-direction: column;              /* Coloca los elementos uno debajo del otro */
+  gap: 6px;                            /* Espacio entre cada elemento */
+  margin-top: 10px;                    /* Separación del encabezado */
+}
+
+textarea {
+  resize: vertical;                    /* Solo permite cambiar altura, no ancho */
+  min-height: 60px;                    /* Altura mínima */
+  padding: 6px;                        /* Espaciado interno */
+  border: 1px solid #ccc;              /* Borde gris suave */
+  border-radius: 6px;                  /* Bordes redondeados */
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="search"] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+select {
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+button {
+  background-color: #0078d7;           /* Mismo azul que el encabezado */
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;                     /* Cambia el cursor al pasar el mouse */
+  font-weight: bold;
+  transition: background-color 0.2s;   /* Suaviza el cambio de color */
+}
+button:hover {
+  background-color: #005fa3;           /* Azul más oscuro al pasar el mouse */
+}
+
+/* ZONA DE BÚSQUEDA */
+#searchSection {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+/* LISTA DE PROMPTS GUARDADOS */
+#promptList {
+  margin-top: 10px;
+  max-height: 200px;                   /* Limita el alto del contenedor */
+  overflow-y: auto;                    /* Muestra scroll si hay muchos prompts */
+}
+
+#promptList h2 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #0078d7;
+}
+
+#promptContainer {
+  list-style: none;                    /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+#promptContainer li {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.prompt-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+}
+
+.prompt-text {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.prompt-category {
+  font-size: 12px;
+  color: #0066cc;
+  display: block;
+}
+
+.prompt-date {
+  font-size: 11px;
+  color: #888;
+}
+
+#filterCategory {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#exportBtn {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#exportBtn:hover {
+  background-color: #004c99;
+}
